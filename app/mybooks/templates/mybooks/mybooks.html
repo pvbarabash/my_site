@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{%block style %} <link rel="stylesheet" href="{% static "styles/style-catalog.css" %}"> {% endblock %}
+
+{%block content %}
+
+<div class="main-container">
+        
+        <div class="container">
+
+            {% for book in books %}
+
+            <div class="card">
+                <img src="{{book.book.image.url}}" alt="">
+                <div class="info">
+                        <p>{{ book.book.name }}</p>
+                </div>
+            </div>
+            
+            {% endfor %}
+
+
+{% endblock %}
+
+
+

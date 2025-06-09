@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{%block style %} <link rel="stylesheet" href="{% static "styles/style-login.css" %}"> {% endblock %}
+
+{%block content %}
+
+<div class="field">
+<div class="login-form">
+
+    <h2>Регистрация</h2>
+
+    <form action="{% url "user:registration" %}" method="post">
+        {% csrf_token %}
+
+        <div class="row">
+
+        <label for="{{form.first_name.id_for_label}}"><b>Ваше имя</b></label>
+        {{form.first_name}}
+        <label for="{{form.second_name.id_for_label}}"><b>Ваша фамилия</b></label>
+        {{form.second_name}}
+        </div>
+        <div class="row">
+        <label for="{{form.username.id_for_label}}"><b>Пользователь</b></label>
+        {{form.username}}
+        <label for="{{form.email.id_for_label}}"><b>Почта</b></label>
+        {{form.email}}
+        </div>
+        <div class="row">
+        <label for="{{form.password1.id_for_label}}"><b>Пароль</b></label>
+        {{form.password1}}
+        <label for="{{form.password2.id_for_label}}"><b>Подтверждение пароля</b></label>
+        {{form.password2}}
+        </div>
+
+        <button type="submit">Войти</button>
+
+    </form>
+
+</div>
+</div>
+
+{% endblock %}

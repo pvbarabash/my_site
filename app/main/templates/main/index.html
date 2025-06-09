@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{%block style %} <link rel="stylesheet" href="{% static "styles/style-home.css" %}"> {% endblock %}
+
+{%block content %}
+
+    <div class="field">
+        <div class="banner">
+            <div class="text">
+                <h1 class="title">Добро пожаловать на Букфрэш!</h1>
+                <p class="description">Мы платформа, которая поможет более эффективно читать книги по саморазвитию. </p>
+                <p>Как? </p>
+                <p>Всё, что нужно, есть ниже. </p>
+                <img src="{% static "images/arrow.png" %}" alt="">
+            </div>
+        </div>
+        <div class="banner">
+            <img class="illustration" src="{% static "images/choose.png" %}" alt="">
+            <div class="text">
+                <h1 class="title">Выбирай книгу!</h1>
+                <p class="description">Переходи в <a href="{% url "catalog:catalog" %}">каталог</a> и выбирай интересующую тебя книгу. </p>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="text">
+                <h1 class="title">Создавай фрэш!</h1>
+                <p class="description">Вкусный, сочный, полезный. </p>
+            </div>
+            <img class="illustration" src="{% static "images/fresh.png" %}" alt="">
+        </div>
+
+        <div class="banner">
+            <img class="illustration" src="{% static "images/bookfresh.jpg" %}" alt="">
+            <div class="text">
+                <h1 class="title">Фрэш?</h1>
+                <p class="description">Да! Книжный фрэш — выжимка из книги по специальному "рецепту", который мы для вас подготовили. </p>
+            </div>
+        </div>
+        
+    </div>
+
+{% endblock %}
+
+
+    
+    
+
+    
+    
+    
+

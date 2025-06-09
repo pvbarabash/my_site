@@ -1,0 +1,33 @@
+.banner {
+    grid-column: 3/11;
+    display: flex;
+    margin-top: 3em;
+    background-color: rgb(226, 225, 225);
+    border-radius:50px;
+    overflow: hidden;
+} 
+
+.text {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.title {
+    margin-top: 1em;
+}
+
+
+.description {
+    margin-top: 1em;
+}
+.description>a {
+    color: black;
+    border-bottom: 4px solid #66bb6a;
+}
+
+.banner>img {
+    margin: 0.5em;
+    border-radius: 50px;
+    
+}

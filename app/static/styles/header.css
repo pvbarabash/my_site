@@ -1,0 +1,100 @@
+
+header {
+    display: flex;
+    height: 95px;
+    background: rgb(176, 176, 176);
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+header nav {
+    display: flex;
+    padding-top: 25px;
+    padding-left: 5em;
+}
+
+.logo img {
+    padding-top: 25px;
+    width: 200px;
+    min-width: 200px;
+}
+
+.btn-drop {
+    display: flex;
+    width: 100%;
+}
+header .drop {
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-btn {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .nav-btn {
+        font-size: 2em;
+        padding-bottom: 0;
+        padding-top: 0;
+        border: none;
+        display: block;
+        cursor: pointer;
+        color: #000000;
+        background-color: rgb(176, 176, 176);
+    }
+    .btn-drop {
+        width: auto;
+    }
+    header .drop {
+        display: none;
+    }
+    header {
+        justify-content: space-between;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .btn-drop:hover .drop {
+        display: block;
+        width: auto;
+        justify-content: none;
+        position: absolute;
+        top: 95px;
+        right: 1px;
+        background-color: rgb(176, 176, 176);
+    }
+    .btn-drop:hover nav {
+        display: block;
+    }
+}
+
+header nav a {
+    color: #000000;
+    display: block;
+    padding: 0.5em;
+
+}
+
+header nav a:hover {
+    border-bottom: 6px solid #66bb6a;
+}
+
+.form {
+    display: flex;
+    padding-top: 25px;
+}
+.form a {
+    color: black;
+    display: block;
+    padding: 1em;
+    padding-top: 0.2em;
+    font-size: 25px;
+    margin-bottom: 20px;
+} 
+
+.form a:hover {
+    background-color: rgb(142, 140, 140);
+}

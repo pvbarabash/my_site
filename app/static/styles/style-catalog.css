@@ -1,0 +1,28 @@
+.card {
+    margin: 1.5em;   
+
+}
+
+.card img {
+    width: 250px;
+
+}
+.card>.info {
+    text-align: center;
+    
+}
+
+.card button {
+    margin-bottom: 2em;
+}
+
+
+.status {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-dark {
+    background-color: black;
+}
+
